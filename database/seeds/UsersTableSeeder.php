@@ -13,19 +13,21 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         DB::table('users') -> insert([
+            [
             'name' => '田中',
             'email' => 'aaaa@ssss.com',
-            'password' => bcrwpt('password'),
+            'password' => bcrypt('password'),
         ],
         [
             'name' => 'やまだ',
             'email' => 'a12@ssss.com',
-            'password' => bcrwpt('password'),
+            'password' => bcrypt('password'),
         ],
         [
             'name' => 'よしだ',
             'email' => 'aaaa3@ssss.com',
-            'password' => bcrwpt('password'),
+            'password' => bcrypt('password'),
+        ],
         ]);
     }
 }
